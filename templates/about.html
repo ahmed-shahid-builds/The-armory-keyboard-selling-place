@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Obsidian Armory</title>
+<meta name="description" content="The story behind Obsidian Armory — why we forge keyboards the slow, stubborn way.">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="diamond-field">
+  <svg width="640" height="640" style="top:-140px;left:30%" viewBox="0 0 100 100"><polygon points="50,0 100,50 50,100 0,50" fill="none" stroke="#9c1f2e" stroke-width="0.22"/></svg>
+</div>
+
+<header class="nav">
+  <a href="{{ url_for('home') }}" class="brand">
+    <svg class="mark" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4"><polygon points="50,5 95,50 50,95 5,50"/></svg>
+    OBSIDIAN&nbsp;ARMORY
+  </a>
+  <nav class="links">
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('armory') }}">Armory</a>
+    <a href="{{ url_for('about') }}" class="active">About</a>
+    <a href="{{ url_for('armory') }}" class="nav-cta">Enter the Armory</a>
+  </nav>
+  <div class="burger">MENU</div>
+</header>
+
+<main>
+
+  <section class="wrap" style="padding:170px 6vw 100px;">
+    <div class="eyebrow reveal in">Origin</div>
+    <h1 class="reveal in" style="font-size:clamp(3rem,8vw,6rem);margin-top:20px;max-width:900px;">
+      WE DIDN'T SET OUT<br>TO BUILD KEYBOARDS.
+    </h1>
+    <p class="reveal in" style="margin-top:26px;max-width:560px;color:var(--ink-dim);font-size:1.05rem;">
+      We set out to stop replacing them. Everything after that was just figuring out how.
+    </p>
+  </section>
+
+  <section class="wrap" style="padding:60px 6vw 140px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;">
+    <div class="reveal">
+      <h2 style="font-size:clamp(1.8rem,3.5vw,2.6rem);">The short version</h2>
+      <p style="margin-top:20px;color:var(--ink-dim);line-height:1.75;">
+        Obsidian Armory started as a frustration, not a plan. Every keyboard that came through the
+        door eventually did the same thing — a switch would stick, a keycap would ghost, the
+        backlight would start flickering right when it mattered. Nobody was building for the
+        person who actually lives on the thing eight hours a day.
+      </p>
+      <p style="margin-top:18px;color:var(--ink-dim);line-height:1.75;">
+        So we started tearing keyboards apart instead of buying new ones. Testing switches to
+        failure on purpose. Rebuilding plates by hand until the flex disappeared. What came out
+        the other side wasn't a hobby anymore — it was a standard we couldn't unsee, and couldn't
+        find anywhere else on the market.
+      </p>
+      <p style="margin-top:18px;color:var(--ink-dim);line-height:1.75;">
+        Four units later, that standard has a name. Red Igris leads it. The rest were built to
+        earn their place beside it.
+      </p>
+    </div>
+    <div class="reveal tilt-wrap">
+      <div class="tilt" style="border:1px solid var(--line);padding:50px 34px;background:var(--surface);">
+        <div class="eyebrow">What we believe</div>
+        <div style="margin-top:26px;display:flex;flex-direction:column;gap:26px;">
+          <div>
+            <h3 style="font-size:1.5rem;color:var(--blood-br);">Slow is a feature</h3>
+            <p style="margin-top:8px;color:var(--ink-dim);font-size:.94rem;">We'd rather ship four units late than forty units unfinished.</p>
+          </div>
+          <div>
+            <h3 style="font-size:1.5rem;color:var(--bone);">Say what's not ready</h3>
+            <p style="margin-top:8px;color:var(--ink-dim);font-size:.94rem;">Payment isn't live yet. We'll tell you that before you ever ask.</p>
+          </div>
+          <div>
+            <h3 style="font-size:1.5rem;color:var(--shade);">Build the thing you'd keep</h3>
+            <p style="margin-top:8px;color:var(--ink-dim);font-size:.94rem;">Every unit has to survive its own maker's daily use first.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PILLARS ============ -->
+  <section class="wrap" style="padding:40px 6vw 140px;">
+    <div class="eyebrow reveal">Why the armory</div>
+    <h2 class="reveal" style="font-size:clamp(2.2rem,4.5vw,3.4rem);margin-top:16px;max-width:700px;">
+      Three things we won't compromise on.
+    </h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:60px;border:1px solid var(--line);">
+      <div class="reveal" style="background:var(--bg);padding:44px 32px;">
+        <div class="eyebrow">Integrity</div>
+        <h3 style="font-size:1.7rem;margin-top:16px;">No dressed-up specs</h3>
+        <p style="margin-top:14px;color:var(--ink-dim);font-size:.95rem;">If a switch is rated for 60 million presses, it's because we put it through 60 million presses. Not because the spec sheet said so.</p>
+      </div>
+      <div class="reveal" style="background:var(--bg);padding:44px 32px;">
+        <div class="eyebrow">Transparency</div>
+        <h3 style="font-size:1.7rem;margin-top:16px;">You'll always know the status</h3>
+        <p style="margin-top:14px;color:var(--ink-dim);font-size:.95rem;">This site tells you exactly what's live — ordering is, payment isn't yet. We'd rather be upfront than smooth it over.</p>
+      </div>
+      <div class="reveal" style="background:var(--bg);padding:44px 32px;">
+        <div class="eyebrow">Craft</div>
+        <h3 style="font-size:1.7rem;margin-top:16px;">Built by hand, checked twice</h3>
+        <p style="margin-top:14px;color:var(--ink-dim);font-size:.95rem;">Every unit is assembled and tested individually before it's ever listed — not pulled off an anonymous production line.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="wrap" style="padding:0 6vw 160px;">
+    <div class="reveal" style="border:1px solid var(--line);padding:80px 40px;text-align:center;background:var(--surface);">
+      <h2 style="font-size:clamp(2.2rem,5.5vw,3.8rem);">Come see what we built.</h2>
+      <a href="{{ url_for('armory') }}" class="btn btn-solid" style="margin-top:26px;">Enter the Armory →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Obsidian Armory</h4>
+        <p style="color:var(--ink-dim);max-width:320px;font-size:.92rem;">
+          A small forge building keyboards that don't cut corners. Every unit tested by hand before it ever reaches a listing.
+        </p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('armory') }}">Armory</a>
+        <a href="{{ url_for('about') }}">About</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="#">hello@obsidianarmory.dev</a>
+        <a href="#">@obsidianarmory</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Obsidian Armory</span>
+      <span>Designed &amp; forged in-house</span>
+    </div>
+  </div>
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
